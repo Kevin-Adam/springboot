@@ -1,8 +1,6 @@
-#jsp Ö§³Ö
 spring:
-  thymeleaf:
+  mvc:
     view:
-      prefix: /WEB-INF/views/
-      suffix: .jsp
-
-
+      suffix: /WEB-INF/views/
+      prefix: .jsp
+application.hello: HelloAngel From application
