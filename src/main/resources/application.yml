@@ -1,0 +1,8 @@
+#jsp Ö§³Ö
+spring:
+  thymeleaf:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+
+
