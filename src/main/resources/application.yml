@@ -1,6 +1,19 @@
 spring:
   mvc:
     view:
-      suffix: /WEB-INF/views/
-      prefix: .jsp
-application.hello: HelloAngel From application
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+  datasource:
+      url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8
+      username: root
+      password: 931027
+      driver-class-name: com.mysql.jdbc.Driver
+#指定mybatis映射文件的地址
+mybatis:
+    mapper-locations: classpath:mapping/*.xml
+    # 注意：对应实体类的路径
+    type-aliases-package: com.cherry.springboot.entity
+    #config-location: classpath:mybatis/mybatis-config.xml
+
+
+application.hello: Hello Kevin-Adam From application

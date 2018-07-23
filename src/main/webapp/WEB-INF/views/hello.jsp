@@ -4,6 +4,6 @@
     <title>Title</title>
 </head>
 <body>
-    <h3> 欢迎 ${name },当前时间：${date } </h3>
+    <h3> 欢迎 ${name },当前时间：${now } </h3>
 </body>
 </html>
