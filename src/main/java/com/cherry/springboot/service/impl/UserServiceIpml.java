@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
  * @desc
  */
 @Service
-public class UserService implements IUserService {
+public class UserServiceIpml implements IUserService {
 
     @Autowired
     private IUserDao userDao;

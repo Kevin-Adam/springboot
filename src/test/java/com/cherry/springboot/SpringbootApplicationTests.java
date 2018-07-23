@@ -1,7 +1,7 @@
 package com.cherry.springboot;
 
 import com.cherry.springboot.entity.User;
-import com.cherry.springboot.service.impl.UserService;
+import com.cherry.springboot.service.IUserService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,12 +13,11 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class SpringbootApplicationTests {
 
     @Autowired
-    private UserService userService;
+    private IUserService userService;
 
     @Test
     public void contextLoads() {
         User user = userService.selectByPrimaryKey(1);
         System.out.println(user);
     }
-
 }
